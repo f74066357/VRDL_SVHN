@@ -8,6 +8,19 @@ https://drive.google.com/drive/folders/1aRWnNvirWHXXXpPPfcWlHQuzGJdXagoc?usp=sha
 
 ## Dataset Structure
 
+## Environment
+```
+conda create -n open-mmlab python=3.7 -y 
+conda activate open-mmlab
+conda install pytorch=1.3 cudatoolkit=10.1 torchvision -c pytorch
+pip install mmcv-full
+```
+clone this repository 
+```
+cd VRDL_SVHN
+pip install -r requirements/build.txt
+pip install -v -e .
+```
 ## Train 
 ```
 python tools/train.py ./configs/detectors/detectors_cascade_rcnn_r50_1x_coco.py
