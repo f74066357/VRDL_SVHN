@@ -7,6 +7,18 @@ https://drive.google.com/drive/folders/1aRWnNvirWHXXXpPPfcWlHQuzGJdXagoc?usp=sha
  - 13068 testing images 
 
 ## Dataset Structure
+```
+data
+└── VOCdevkit
+    └── VOC2007
+        ├── Annotations
+        ├── JPEGImages
+        └── ImageSets
+            └── Main
+                ├── test.txt
+                ├── train.txt
+                └── val.txt
+```
 
 ## Environment
 ```
@@ -15,7 +27,7 @@ conda activate open-mmlab
 conda install pytorch=1.3 cudatoolkit=10.1 torchvision -c pytorch
 pip install mmcv-full
 ```
-clone this repository 
+-- clone this repository -- 
 ```
 cd VRDL_SVHN
 pip install -r requirements/build.txt
